@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/dimens_10"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/splash_imageview"
+        android:layout_width="@dimen/dimens_160"
+        android:layout_height="@dimen/dimens_160"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/restaurant_pic"
+        android:scaleType="centerCrop" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="@dimen/dimens_150"
+        android:layout_height="wrap_content"
+        android:background="#60000000"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/dimens_60"
+        android:layout_marginStart="@dimen/dimens_5"
+        android:text="@string/restaurant_sale"
+        android:textColor="#ffffffff" />
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/tv_restaurant_less_than_30_rooms"
+        android:layout_width="@dimen/dimens_160"
+        android:layout_height="@dimen/dimens_160"
+        android:layout_marginStart="@dimen/dimens_10"
+        android:layout_toEndOf="@+id/splash_imageview"
+        android:src="@drawable/restaurant_pic"
+        android:scaleType="centerCrop" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="@dimen/dimens_150"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/splash_imageview"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/dimens_60"
+        android:layout_marginStart="@dimen/dimens_15"
+        android:background="#60000000"
+        android:text="@string/restaurant_sale_less_than_30_rooms"
+        android:textColor="#ffffffff" />
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_below="@+id/tv_restaurant_less_than_30_rooms"
+        android:layout_width="@dimen/dimens_160"
+        android:layout_height="@dimen/dimens_160"
+        android:layout_marginTop="@dimen/dimens_20"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/restaurant_pic"
+        android:scaleType="centerCrop" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_below="@+id/tv_restaurant_less_than_30_rooms"
+        android:layout_width="@dimen/dimens_150"
+        android:layout_height="wrap_content"
+        android:background="#60000000"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/dimens_80"
+        android:layout_marginStart="@dimen/dimens_5"
+        android:text="@string/restaurant_sale_more_than_30_rooms"
+        android:textColor="#ffffffff" />
+</RelativeLayout>

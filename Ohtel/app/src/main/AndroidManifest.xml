@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ohtel.ohtel">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".singleton.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".screens.screens.splash.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screens.screens.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme" />
+        <activity
+            android:name=".screens.screens.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme" />
+        <activity
+            android:name=".screens.screens.dashboard.DashBoard"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme" />
+        <activity
+            android:name=".screens.screens.itemsdetails.ItemDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme" />
+        <activity
+            android:name=".screens.screens.addjob.AddJobActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".screens.screens.addrestaurant.AddRestaurant"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".screens.screens.restaurantforsale.RestaurantForSaleFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".screens.screens.restaurantforsaledetails.RestaurantForSaleDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".screens.screens.hotelforsale.HotelForSaleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".screens.screens.hotelforsaledetails.HotelForSaleDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".screens.screens.jobdetails.JobDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme" />
+        <activity
+            android:name=".screens.screens.addhotel.AddHotelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".screens.screens.grocery.GroceryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".screens.screens.addgrocery.AddGroceryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".screens.screens.grocerydetails.GroceryDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".screens.screens.meat.MeatActivity"></activity>
+    </application>
+
+</manifest>

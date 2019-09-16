@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_icon_tint"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+
+            android:padding="8dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/nav_close_icon_id"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/close_drawer"
+                android:tint="@color/white" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/linearProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nav_close_icon_id"
+                android:gravity="center"
+                android:padding="19dp">
+
+                <ImageView
+                    android:id="@+id/nav_profile_icon_id"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/profile_side_icon" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/nav_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/user_name"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/linearProfile"
+                android:gravity="center"
+                android:text="@string/version"
+                android:textColor="@color/new_bg_color"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relateProfile"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/nav_dashboard_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="18dp"
+                    android:padding="@dimen/dimens_10"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="@string/dashboard"
+                    android:textColor="@color/md_black_1000" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/nav_used_equipment_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:padding="@dimen/dimens_10"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="@string/used_equipment"
+                    android:textColor="@color/md_black_1000" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/nav_new_equipment_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:drawablePadding="18dp"
+                    android:padding="@dimen/dimens_10"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="@string/new_equipment"
+                    android:textColor="@color/md_black_1000" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/nav_venders_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="@string/venders"
+                    android:padding="@dimen/dimens_10"
+                    android:textColor="@color/md_black_1000" />
+
+                <!-- <android.support.v7.widget.AppCompatTextView
+                     android:id="@+id/nav_reports_id"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="6dp"
+                     android:drawableLeft="@drawable/reports_nav"
+                     android:drawablePadding="18dp"
+                     android:fontFamily="@font/roboto_medium"
+                     android:gravity="center"
+                     android:text="@string/reports"
+                     android:textColor="@color/md_black_1000" />-->
+
+                <!--  <android.support.v7.widget.AppCompatTextView
+                      android:id="@+id/nav_settings_id"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="6dp"
+                      android:drawableLeft="@drawable/settings"
+                      android:drawablePadding="18dp"
+                      android:fontFamily="@font/roboto_medium"
+                      android:gravity="center"
+
+                      android:text="@string/settings"
+                      android:textColor="@color/md_black_1000" />-->
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/nav_importer_exporter_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="@string/importer_exporter"
+                    android:padding="@dimen/dimens_10"
+                    android:textColor="@color/md_black_1000" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/nav_jobs_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:padding="@dimen/dimens_10"
+                    android:text="@string/jobs"
+                    android:textColor="@color/md_black_1000" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/nav_self_job_requirement_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="@string/self_job_requirements"
+                    android:padding="@dimen/dimens_10"
+                    android:textColor="@color/md_black_1000" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/nav_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="@string/logout"
+                    android:padding="@dimen/dimens_10"
+                    android:textColor="@color/md_black_1000" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop=".8dp"
+                android:layout_weight="0.6"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/nav_email_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:padding="@dimen/dimens_10"
+                    android:text="@string/emial_id"
+                    android:textColor="@color/md_black_1000" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/nav_toll_free_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="@string/toll_free_number"
+                    android:padding="@dimen/dimens_10"
+                    android:textColor="@color/md_black_1000" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</ScrollView>
