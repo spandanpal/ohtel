@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MVVPpaternApp</string>
+    <string name="loading">Please wait..</string>
+</resources>
